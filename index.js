@@ -20,9 +20,6 @@ app.use(express.json());
 // mongodb connect
 
 
-
-
-
 const uri = "mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.td7ox.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
