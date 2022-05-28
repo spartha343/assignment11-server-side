@@ -32,7 +32,7 @@ async function run() {
         const reviewCollection = client.db("assignment12").collection("review");
         const orderCollection = client.db("assignment12").collection("order");
 
-        // user management 
+        // managing user
         app.get('/userget', async (req, res) => {
             const products = await userCollection.find({}).toArray();
             res.send(products)
