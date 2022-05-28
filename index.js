@@ -97,12 +97,6 @@ async function run() {
             res.send('Got a PUT request at /user')
         })
 
-
-
-
-
-
-        //   order management 
         app.get('/orderget', async (req, res) => {
             const products = await orderCollection.find({}).toArray();
             res.send(products)
